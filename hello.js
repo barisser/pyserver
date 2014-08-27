@@ -17,10 +17,10 @@ express.static(__dirname + '/public');
 
 //app.use('/', express.static(__dirname + '/public/freelancer'));
 
-app.use('/', express.static(__dirname + '/public/basic/'));
+app.use('/', express.static(__dirname + '/public/landing-page/'));
 
-app.use('/contact', express.static(__dirname + '/public/basic/'));
-app.use('/faq', express.static(__dirname + '/public/basic/'));
+app.use('/contact', express.static(__dirname + '/public/landing-page/'));
+app.use('/faq', express.static(__dirname + '/public/landing-page/'));
 
 var port = Number(process.env.PORT || 5001);
 
