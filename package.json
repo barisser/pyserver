@@ -1,0 +1,31 @@
+{
+  "name": "PyWeb",
+  "version": "0.0.0",
+  "description": "",
+  "main": "hello.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.8.5",
+    "logfmt": "^1.1.2",
+    "nodemon": "^1.2.1",
+    "pagedown": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barisser/pyserver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barisser/pyserver/issues"
+  },
+  "homepage": "https://github.com/barisser/pyserver"
+}
