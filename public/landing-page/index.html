@@ -265,7 +265,7 @@ function shownewaddress(public_address, private_key, amount_to_send){
 }
 
 function senddata(text){
-  var key = Bitcoin.ECKey.makeRandom()
+  var key = Bitcoin.ECKey.makeRandom();
   var public_address=key.pub.getAddress().toString();
   var private_key=key.toWIF();
 
