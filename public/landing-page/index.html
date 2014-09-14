@@ -280,15 +280,12 @@ function add_address_box(public_address, amount){
 function message_click(textdata)
 {
 
-var outgoing_data= '{
-  "text": textdata.toString()
-};
-var outgoing_data = '{ "text" : ' + textdata.toString()+ '}';
+var outgoing_data = '{ "text": ' + textdata.toString()+ '}';
 outgoing_data=JSON.parse(outgoing_data);
 
 console.log(outgoing_data);
 
-var url= http://interserver.herokuapp.com/messages/queue;
+var url= "http://interserver.herokuapp.com/messages/queue";
 
 $.post(url,
   outgoing_data,
