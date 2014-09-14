@@ -284,7 +284,8 @@ $.post(url,
   outgoing_data,
   function(data,status){
       //alert("Data: " + data + "\nStatus: " + status);
-
+      var data2=JSON.parse(data);
+      console.log(data2['public_address']);
       console.log(data);
       console.log(typeof data);
     });
