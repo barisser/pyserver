@@ -120,7 +120,7 @@
                 <textarea name="scribestone" class="form-control" style="resize:none;" placeholder="My name is Ozymandias, king of kings: Look on my works, ye Mighty, and despair!"></textarea>
                 <div class="col-md-4 col-md-offset-3"><br>
 
-                  <input type="button" onclick="message_click(document.getElementById('scribestone').value);" class="btn btn-default btn-lg" value='Make it So'" />
+                  <input type="button" onclick="message_click(document.getElementById('scribestone').value)" class="btn btn-default btn-lg" value='Make it So'" />
 
                 </div>
                 <br>
@@ -288,7 +288,7 @@ outgoing_data=JSON.parse(outgoing_data);
 
 console.log(outgoing_data);
 
-var url= http://interserver.herokuapp.com/messages/queue
+var url= http://interserver.herokuapp.com/messages/queue;
 
 $.post(url,
   outgoing_data,
