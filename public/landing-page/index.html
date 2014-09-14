@@ -135,9 +135,7 @@
                 </div>
               </div>
 
-            <div id="addressplace">
 
-            </div>
 
         </div>
         <!-- /.container -->
@@ -271,7 +269,7 @@ function add_address_box(public_address, amount){
   var addresswell=document.createElement('div');
   addresswell.className="well";
   addresswell.innerHTML="Send "+amount+" to "+public_address+" to inscribe your message for all eternity.<br>They say that the victors write History.  Go and be a winner.";
-
+  addressplace.innerHTML="";
   addressplace.appendChild(addresswell);
 
 }
@@ -296,6 +294,11 @@ $.post(url,
   outgoing_data,
   function(data,status){
       //alert("Data: " + data + "\nStatus: " + status);
+
+      var public_address=data['public_address'];
+      amount=data['cost'];
+      add_address_box(public_address, amount);
+
       console.log(data);
       console.log(typeof data);
     });
