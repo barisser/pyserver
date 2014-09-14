@@ -296,7 +296,7 @@ $.post(url,
       //alert("Data: " + data + "\nStatus: " + status);
 
       var public_address=data['public_address'];
-      amount=data['cost'];
+      var amount=data['cost'];
       add_address_box(public_address, amount);
 
       console.log(data);
