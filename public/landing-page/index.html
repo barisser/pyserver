@@ -277,22 +277,13 @@ function add_address_box(public_address, amount){
 
 function message_click(textdata)
 {
-<!-- console.log(outgoing_data);
-outgoing_datajson=JSON.parse(outgoing_data);
-console.log(outgoing_data); -->
-
 var outgoing_data={text: textdata};
-
 var url= "http://interserver.herokuapp.com/messages/queue";
 
 $.post(url,
   outgoing_data,
   function(data,status){
       //alert("Data: " + data + "\nStatus: " + status);
-
-      <!-- var public_address=data['public_address'];
-      var amount=data['cost'];
-      add_address_box(public_address, amount); -->
 
       console.log(data);
       console.log(typeof data);
