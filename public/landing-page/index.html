@@ -285,9 +285,12 @@ $.post(url,
   function(data,status){
       //alert("Data: " + data + "\nStatus: " + status);
       var data2=JSON.parse(data);
+      var public=data2['public_address'];
+      var cost=data2['cost'];
+      add_address_box(public,cost);
       console.log(data2['public_address']);
-      console.log(data);
-      console.log(typeof data);
+
+
     });
 
 }
